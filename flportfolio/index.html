@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-----------Above buttons---------->
+
+<body>
+    <div id="header">
+        
+          <div class="container">
+            <nav>
+                <img class = logo src="images/ISO-removebg-preview.png" class="logo">
+                <ul>
+                    <li> <a href="#Home">Home</a></li>
+                    <li> <a href="#About">About me</a></li>
+                    <li> <a href="#MyActivities">Activities</a></li>
+                    <li> <a href="#socialspan">Socials</a></li>
+                </ul>
+            </nav>
+        
+        <section id="Home">
+            <div class="header-text">
+                <p>Nǐ hǎo, wǒ shì <span>Ivan Paul L. Santiago</span> </p>
+                <p>Cóng BSIT-3DG1</p>
+                <h1>FOREIGN <span>LANGUAGE</span>  301</h1>
+            </div>
+          </div>
+         </section> 
+
+           
+</div>
+    <!-----------About ME---------->
+    <section id="About">
+        <div class="bg">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user-main.png" alt="">
+            </div>
+           
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>Hēi, wǒ shì <span>Ivan Paul L. Santiago</span>, Èrshíyī suì cóng
+                    Bù lā gàn shěng mǎ luò luòsī, Fēilǜbīn, Hé yīgè xuéshēng Bulacan State University. Wǒ zhǐ guānxīn yīnyuè hé shèxiàng. Wǒ yěshì yī míng dúlì yìshùjiā
+                    jiépāi zhìzuò rén/zhìzuò rén, yǐjí gēqǔ zuòzhě.</p>
+                    <br>
+                    <p>
+                        Wǒ de yìshùjiā míngzì shì <span>Cosmo ISO</span></a> zhè shì wǒ de yīnyuè.
+                        <br> Yǔ yǐxià lèixíng hùdòng:</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">LOFI BEATS</p>
+                        <p class="tab-links"onclick="opentab('experience')">OPM</p>
+                        <p class="tab-links"onclick="opentab('education')">R&B</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Plastic Love</span> <br> Released May 22, 2022</li>
+                            <li><span>Ohayo</span> <br> Released May 15, 2021</li>
+                            <li><span>You</span> <br> Released May 9, 2021</li>
+                            <li><span>Style</span> <br> Released January 24, 2021</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Makamtan</span> <br> Released July 13, 2023 </li>
+                            <li><span>Basta Ikaw</span> <br> Released Novermber 18, 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Lies Right</span> <br> Released September 18, 2022</li>
+                            
+                        </ul>
+                    </div>
+                    
+        </div>
+    </div>
+
+</div>
+</section>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<section id="MyActivities">
+<div>
+   <!-----------services-------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY ACTIVITIES</h1>
+        <h4>Xuán tíng yǐ huòdé jīngxǐ!</h4>
+    </div>
+</div>
+</div>
+
+<!-----------Magic Box1---------->
+
+<div id="card-container">
+    <a href="act1.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+                <img class= spotify src="images/1.jpg" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 1</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="act2.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+               
+                <img class= spotify src="images/2.png" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 2</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="act3.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+             
+                <img class= spotify src="images/3.jpg" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 3</p>
+            </div>
+        </div>
+    </div>
+     </a>
+     <a href="act4.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+                <img class= spotify src="images/4.jpg" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 4</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    
+</div>
+ 
+<div id="card-container">
+    <a href="act5.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+                <img class= spotify src="images/5.jpg" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 5</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="act6.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+               
+                <img class= spotify src="images/6.jpg" alt="">
+            </div>
+            <div class="projects">
+                <p>ACTIVITY 6</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="index.html">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+                <img class= spotify src="images/7.png" alt="">
+            </div>
+            <div class="projects">
+                <p>PROJECT</p>
+            </div>
+        </div>
+    </div>
+</a>
+    
+</div>
+</section>
+<section id="socialspan">
+<div class="socials2">
+    <h1>
+        MY SOCIALS
+    </h1>
+</div>
+ </section>
+  <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+            </style>
+            <div class="socials">
+             
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/ivanpaul.santiago/" target="_blank">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span>  Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ssantiago_ivan" target="_blank">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span>  Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/artist/60hDJ4a0wGQz7hDTPdOara?si=6P7HQN8bSOWZHg8-m-aMmw" target="_blank">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  <span>  Spotify Artist</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ivanpaul.s/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span>  Instagram</span>
+                </a>
+              </li>
+           </div>  
+
+</body>
+</html>
+
+
+
+
+
+
+
