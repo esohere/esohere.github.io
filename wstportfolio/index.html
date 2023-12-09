@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-----------Above buttons---------->
+
+<body>
+    <div id="header">
+        
+          <div class="container">
+            <nav>
+                <img class = logo src="images/ISO-removebg-preview.png" class="logo">
+                <ul>
+                    <li> <a href="#Home">HOME</a></li>
+                    <li> <a href="#About">ABOUT ME</a></li>
+                    <li> <a href="#MyActivities">PROJECTS</a></li>
+                    <li> <a href="#socialspan">SOCIALS</a></li>
+                </ul>
+            </nav>
+        
+        <section id="Home">
+            <div class="header-text">
+                <p>UI/UX DESIGNER <span>AND</span> FRONT END DEVELOPER </p>
+               
+                <h1>Hi, I'm <span>Ivan Paul Santiago</span>  </h1>
+            </div>
+          
+        </div>
+         </section> 
+
+           
+</div>
+    <!-----------About ME---------->
+    <section id="About">
+        <div class="bg">
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user-main.png" alt="">
+            </div>
+           
+            <div class="about-col-2">
+                <h1 class="sub-title">ABOUT ME</h1>
+                <p>Hey, I am <span>Ivan Paul L. Santiago</span>, music enthusiast, independent music producer/artist, UI/UX designer, front-end developer, and videographer/editor. I blend the world of melodies with the precision of code, crafting seamless user experiences. When I'm not immersed in pixels and code, I'm capturing and editing visuals to tell captivating stories. Join me on this creative journey where music and design converge, pushing boundaries and creating resonant experiences. Let's connect and explore the art of harmonious innovation!  </p>
+                    <br>
+                    <p>
+                        My artist name is  <span>Cosmo ISO</span></a> and here's my music.
+                        <br> Click the genres below:</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">LOFI BEATS</p>
+                        <p class="tab-links"onclick="opentab('experience')">OPM</p>
+                        <p class="tab-links"onclick="opentab('education')">R&B</p>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Plastic Love</span> <br> Released May 22, 2022</li>
+                            <li><span>Ohayo</span> <br> Released May 15, 2021</li>
+                            <li><span>You</span> <br> Released May 9, 2021</li>
+                            <li><span>Style</span> <br> Released January 24, 2021</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Makamtan</span> <br> Released July 13, 2023 </li>
+                            <li><span>Basta Ikaw</span> <br> Released Novermber 18, 2022</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Lies Right</span> <br> Released September 18, 2022</li>
+                            
+                        </ul>
+                    </div>
+                    
+        </div>
+    </div>
+
+</div>
+</section>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links"); 
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<section id="MyActivities">
+<div>
+   <!-----------services-------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">MY PROJECTS</h1>
+        <h4>Hover for a surprised!</h4>
+    </div>
+</div>
+</div>
+
+<!-----------Magic Box1---------->
+
+<div id="card-container">
+    <a href="">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+                
+            </div>
+            <div class="projects">
+                <p>COMING SOON</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+               
+                
+            </div>
+            <div class="projects">
+                <p>COMING SOON</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    <a href="">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+             
+           
+            </div>
+            <div class="projects">
+                <p>COMING SOON</p>
+            </div>
+        </div>
+    </div>
+     </a>
+     <a href="">
+    <div class="card">
+        <div class = "c">
+            <div class="inside-box">
+                
+              
+            </div>
+            <div class="projects">
+                <p>COMING SOON</p>
+            </div>
+        </div>
+    </div>
+    </a>
+    
+</div>
+ 
+
+</section>
+<section id="socialspan">
+<div class="socials2">
+    <h1>
+        MY SOCIALS
+    </h1>
+</div>
+ </section>
+  <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+            </style>
+            <div class="socials">
+             
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/ivanpaul.santiago/" target="_blank">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                  <span>  Facebook</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/ssantiago_ivan" target="_blank">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                  <span>  Twitter</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/artist/60hDJ4a0wGQz7hDTPdOara?si=6P7HQN8bSOWZHg8-m-aMmw" target="_blank">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                  <span>  Spotify</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ivanpaul.s/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                  <span>  Instagram</span>
+                </a>
+              </li>
+           </div>  
+
+</body>
+</html>
+
+
+
+
+
+
+
