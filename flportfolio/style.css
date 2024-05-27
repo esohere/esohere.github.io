@@ -393,6 +393,7 @@ a{
 
 .socials ul {
 
+  margin-left: 350px;
   
   display:flex;
  
@@ -515,6 +516,7 @@ a{
 .socials2 h1{
   margin: 250px;
   font-size: 65px;
+  margin-left: 160px;
 }
 h6 span{
   color: #FFDF2B;
